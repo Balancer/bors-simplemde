@@ -20,4 +20,24 @@ class SimpleMDE
 			\bors_use($bower_asset_path.'/simplemde.min.js');
 		}
 	}
+
+	static function appear($element, $params = [])
+	{
+		self::load();
+		\B2\jQuery::load();
+
+		\B2\jQuery::on_ready(
+"
+	var simplemde = new SimpleMDE({
+		spellChecker: false,
+		tabSize: 2,
+		autosave: {
+			enabled: true,
+			uniqueId: 'SimpleMDE',
+			delay: 1000,
+		}
+	});
+");
+
+	}
 }
