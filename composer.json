@@ -1,0 +1,18 @@
+{
+	"name": "bors/simplemde",
+	"description": "SimpleMDE editor support for BORS© Framework",
+
+	"authors": [
+		{ "name": "Balancer", "email": "balancer@balancer.ru" }
+	],
+
+	"suggest": {
+		"bower-asset/simplemde": "Needed if you want use local asset instead CDN"
+	},
+
+    "autoload": {
+		"psr-4": {
+			"B2\\": "./"
+		}
+    }
+}
