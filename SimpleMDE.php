@@ -32,7 +32,7 @@ class SimpleMDE
 		spellChecker: false,
 		tabSize: 2,
 		autosave: {
-			enabled: true,
+			enabled: false,
 			uniqueId: 'SimpleMDE',
 			delay: 1000,
 		}
